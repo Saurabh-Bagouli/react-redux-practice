@@ -1,12 +1,38 @@
 import React, { useState } from 'react'
 export default function DragnDrop() {
     const groups = ["group1", "group2"];
-    const initialItems = [
-        { id: 1, group: "group1", value: "drag 1" },
-        { id: 2, group: "group1", value: "drag 2" },
-        { id: 3, group: "group1", value: "drag 3" },
-        { id: 4, group: "group1", value: "drag 4" }
-    ];
+    const initialItems =[
+        {
+          id: 1,
+          title: 'Todo Parent 1',
+          child_node: true,
+          linked_todo: null,
+        },
+        {
+          id: 2,
+          title: 'Todo Child 1',
+          child_node: false,
+          linked_todo: 1,
+        },
+        {
+          id: 3,
+          title: 'Todo Chil 2',
+          child_node: false,
+          linked_todo: 1,
+        },
+        {
+          id: 4,
+          title: 'Todo Parent 2',
+          child_node: false,
+          linked_todo: null,
+        },
+        {
+          id: 6,
+          title: 'Todo Parent 3',
+          child_node: false,
+          linked_todo: null,
+        },
+      ];
 
     const [items, setItems] = useState(initialItems);
     const [dragData, setDragData] = useState({});

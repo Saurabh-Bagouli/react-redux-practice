@@ -5,8 +5,8 @@ import Newdnd from './Components/Newdnd';
 function App() {
   return (
     <div className="App">
-      {/* <DragnDrop/> */}
-      <Newdnd/>
+      <DragnDrop/>
+      {/* <Newdnd/> */}
     </div>
   );
 }
