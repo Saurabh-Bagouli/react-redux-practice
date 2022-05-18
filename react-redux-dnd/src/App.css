@@ -1,0 +1,56 @@
+.groups {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.group {
+    margin: 2px;
+    padding: 20px;
+    min-height: 16rem;
+    background-color: aqua;
+}
+
+/* .noDrop {
+    margin: 2px;
+    padding: 20px;
+    min-height: 16rem;
+    background-color: red;
+    cursor: not-allowed !important;
+} */
+
+.title {
+    color: black;
+    padding: 0;
+    margin-top: 0;
+}
+.item {
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    border: 2px black;
+    cursor: grab;
+}
+.groups{
+    justify-content: center;
+    /* background-color: aqua; */
+    /* height: 200px; */
+}
+.first-list-items{
+    background-color: aqua;
+}
+.second-list-items{
+    background-color: aqua;
+}
+.list{
+    background-color: white;
+    list-style-type: none;
+    height: 25px;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+   margin-bottom: 15px;
+}
